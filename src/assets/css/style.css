@@ -1,39 +1,50 @@
+.centerBox {
+  margin-left: auto;
+  margin-right: auto;
+}
 body {
-    background-color: silver;
+  background: linear-gradient(90deg, silver, #dadada, silver);
 }
-
-#clock {
-    text-align: center;
-    color: whitesmoke;
-    background-color: black;
-    padding: 5px;
-    border: 1px solid darkred;
-    border-top: 2.5px solid red;
-    border-bottom: 2.5px solid tomato;
-    border-radius: 10px;
-    font-size: 14px;
-    width: 100%;
-    height: 100px;
-    line-height: 16px;
-    text-shadow: 2px 2px darkred;
+body table#clock {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75vw;
+  height: 20vh;
+  font-size: 2vh;
+  line-height: 2vh;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  padding: 1.5vh;
+  border: 0.1vh solid darkred;
+  border-top: 0.4vh solid red;
+  border-bottom: 0.4vh solid tomato;
+  border-radius: 2vh;
+  text-shadow: 0.4vh 0.4vh 0.8vh darkred;
+  margin-top: 38.5vh;
+  transition: 0.5s;
 }
-
-td {
-    width: calc(100%/8);
+body table#clock:hover {
+  width: 80vw;
+  height: 25vh;
+  font-size: 3vh;
+  line-height: 3vh;
+  background-color: whitesmoke;
+  color: black;
+  text-shadow: 0.4vh 0.4vh 0.8vh tomato;
+  margin-top: 35.5vh;
+  transition: 0.5s;
 }
-
-.yes {
-    color: whitesmoke;
-    text-shadow: 2px 2px darkred;
+body table#clock td {
+  width: calc(12.5%);
 }
-
-.no {
-    opacity: 0;
+body table#clock td .yes {
+  opacity: 1;
 }
-
-.sep {
-    display: block;
-    line-height: 35px;
-    color: whitesmoke;
-    text-shadow: 2px 2px darkred;
+body table#clock td .no {
+  opacity: 0;
+}
+body table#clock td .sep {
+  display: block;
+  line-height: 4vh;
 }

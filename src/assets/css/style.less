@@ -1,0 +1,69 @@
+// out: style.css
+
+.centerBox {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.size(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+.fontSize(@pixels) {
+  font-size: @pixels;
+  line-height: @pixels;
+}
+
+.colors(@bgColor, @fontColor) {
+  background-color: @bgColor;
+  color: @fontColor;
+}
+
+body {
+    background: linear-gradient(90deg, silver, lighten(silver, 10%), silver);
+
+    table {
+      &#clock {
+        .centerBox;
+        .size(75vw, 20vh);
+        .fontSize(2vh);
+        .colors(black, whitesmoke);
+        text-align: center;
+        padding: 1.5vh;
+        border: 0.1vh solid darkred;
+        border-top: 0.4vh solid red;
+        border-bottom: 0.4vh solid tomato;
+        border-radius: 2vh;
+        text-shadow: 0.4vh 0.4vh 0.8vh darkred;
+        margin-top: 38.5vh;
+        transition: 0.5s;
+
+        &:hover {
+          .size(80vw, 25vh);
+          .fontSize(3vh);
+          .colors(whitesmoke, black);
+          text-shadow: 0.4vh 0.4vh 0.8vh tomato;
+          margin-top: 35.5vh;
+          transition: 0.5s;
+        }
+
+        td {
+          width: calc(100%/8);
+
+          .yes {
+              opacity: 1;
+          }
+
+          .no {
+              opacity: 0;
+          }
+
+          .sep {
+              display: block;
+              line-height: 4vh;
+          }
+        }
+      }
+    }
+}
