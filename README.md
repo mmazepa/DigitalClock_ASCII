@@ -1,7 +1,7 @@
 # Digital Clock (ASCII Version)
 
 ![HTML5](https://img.shields.io/badge/HTML-HTML5-blue)
-![CSS](https://img.shields.io/badge/CSS-CSS3 & Less-blue)
+![CSS](https://img.shields.io/badge/CSS-CSS3+Less-blue)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-blue)
 
 ## Table of contents
